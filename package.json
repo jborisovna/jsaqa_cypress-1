@@ -1,0 +1,22 @@
+{
+  "name": "lecture",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "cypress": "cypress open",
+    "cy:chrome:headed": "cypress run --browser chrome --headed",
+    "cy:chrome:headless": "cypress run --browser chrome --headless",
+    "cy:edge:headed": "cypress run --browser edge --headed",
+    "cy:edge:headless": "cypress run --browser edge --headless",
+    "cy:mobile:headless": "cypress run -b edge -C cypress2.config.js",
+    "cy:mobile:headed": "cypress run -b chrome --headed -C cypress2.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.4"
+  }
+}
