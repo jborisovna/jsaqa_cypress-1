@@ -28,23 +28,23 @@ describe('login page', () => {
   })
 })
 
-  describe('test book list', () => {
-    beforeEach(() => {
-      cy.visit('/')
-      cy.login('test@test.com', 'test')
-    })
+describe('test book list', () => {
+  beforeEach(() => {
+    cy.visit('/')
+    cy.login('test@test.com', 'test')
+  })
 
-    const book1 = {
-      title: "Волхв",
-      description: "Роман",
-      author: "Джон Фаулз"
-    }
+  const book1 = {
+    title: "Волхв",
+    description: "Роман",
+    author: "Джон Фаулз"
+  }
 
-    const book3 = {
-      title: "Авиатор",
-      description: "Современная проза",
-      author: "Евгений Водолазкин"
-    }
+  const book3 = {
+    title: "Авиатор",
+    description: "Современная проза",
+    author: "Евгений Водолазкин"
+  }
 
   it('should add book to list', () => {
     cy.addBook(book1)
